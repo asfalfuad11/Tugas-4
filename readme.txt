@@ -1,3 +1,7 @@
+Flowchart
+https://drive.google.com/file/d/1aXyNz8f3GAjwPJcD7ro1YfDxCJIHmQJM/view?usp=drivesdk
+
+
 PSEUDOCODE
 BEGIN
     // Definisikan matriks A dan B
