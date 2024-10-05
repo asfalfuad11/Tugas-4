@@ -1,8 +1,8 @@
+Flowchart Tugas 4
+https://drive.google.com/file/d/18af6SOS1dnueuZRzoyLySwKCluu9iyku/view?usp=drivesdk
 
 
-
-
-
+PSEUDOCODE
 FUNCTION multiply_matrices(A, B)
     INITIALIZE C as 3x3 matrix with all elements = 0
 
