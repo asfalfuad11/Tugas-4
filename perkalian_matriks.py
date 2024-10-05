@@ -1,39 +1,37 @@
-def multiply_matrices(A, B):
-    # Inisialisasi matriks hasil C dengan 0
-    C = [[0, 0, 0], [0, 0, 0], [0, 0, 0]]
-    
-    # Perkalian matriks
-    for i in range(3):
-        for j in range(3):
-            for k in range(3):
-                C[i][j] += A[i][k] * B[k][j]
-    
-    return C
+# Mendefinisikan matriks A dan B
+A = [
+    [-2, 2, 3],
+    [4, -6, 7],
+    [7, 8, 9]
+]
 
-# Input matriks A 3x3
-A = []
-print("Masukkan elemen matriks A (3x3):")
-for i in range(3):
-    row = list(map(int, input(f"Baris {i + 1} (pisahkan dengan spasi): ").split()))
-    if len(row) != 3:
-        print("Matriks A harus berordo 3x3.")
-        exit()
-    A.append(row)
+B = [
+    [9, 8, 7],
+    [6, -8, 4],
+    [3, 2, 1]
+]
 
-# Input matriks B 3x3
-B = []
-print("Masukkan elemen matriks B (3x3):")
-for i in range(3):
-    row = list(map(int, input(f"Baris {i + 1} (pisahkan dengan spasi): ").split()))
-    if len(row) != 3:
-        print("Matriks B harus berordo 3x3.")
-        exit()
-    B.append(row)
+# Inisialisasi matriks hasil C
+C = [[0, 0, 0], 
+     [0, 0, 0], 
+     [0, 0, 0]]
 
 # Melakukan perkalian matriks
-C = multiply_matrices(A, B)
+for i in range(len(A)):
+    for j in range(len(B[0])):
+        for k in range(len(B)):
+            C[i][j] += A[i][k] * B[k][j]
 
 # Menampilkan hasil
-print("Hasil Perkalian Matriks C:")
+print("Matriks A:")
+for row in A:
+    print(row)
+
+print("Matriks B:")
+for row in B:
+    print(row)
+
+print("Matriks Hasil C:")
 for row in C:
     print(row)
+
